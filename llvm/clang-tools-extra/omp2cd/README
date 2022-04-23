@@ -1,0 +1,98 @@
+====================================================
+omp2cd: An OpenMP to Codelets Compiler based on Clang
+
+v1.0
+March 1, 2017
+
+CAPSL: Computer Architectures and Parallel Systems Laboratory
+University of Delaware
+Newark, DE
+19716
+USA
+
+Jaime Arteaga
+jaime@udel.edu
+
+Download:
+https://github.com/jandres742/omp2cd
+
+Citation:
+Jaime Arteaga, Stephane Zuckerman, Guang R. Gao
+"Multigrain Parallelism: Bridging Coarse-Grain Parallel
+Programs and Fine-Grain Event-Driven Multithreading"
+2017 IEEE International Parallel and Distributed Processing
+Symposium (IPDPS 2017)
+May 2017
+====================================================
+
+This is omp2cd, a Multigrain Parallel Compiler to generate
+fine-grain applications from OpenMP programs. Currently,
+output applications are generated for DARTS and
+SWARM runtimes.
+
+omp2cd is a free software. See LICENSE file.
+
+====================================================
+A summary of the current support on omp2cd follows:
+
+-------------------
+OpenMP v2.5:
+
+Directives:
+parallel
+for
+sections
+section
+single
+parallel for
+master
+critical
+barrier
+atomic
+flush
+ordered (Partially)
+threadprivate
+
+Clauses:
+default
+shared
+private
+firstprivate
+lastprivate
+reduction
+copyin
+copyprivate
+schedule
+nowait
+
+Env. Variables:
+OMP_SCHEDULE
+OMP_NUM_THREADS
+
+Runtime Routines Supported
+omp_set_num_threads
+omp_get_num threads
+omp_get_max threads
+omp_get_thread num
+omp_get_num procs
+omp_init_lock
+omp_destroy_lock
+omp_set_lock
+omp_unset_lock
+omp_test_lock
+omp_get_time
+
+-------------------
+OpenMP v3.0:
+
+Directives:
+task
+taskwait
+
+-------------------
+OpenMP v4.0:
+
+Clauses:
+depend
+
+====================================================
