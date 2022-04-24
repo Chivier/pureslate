@@ -1,0 +1,19 @@
+sourceFileName : ../../tests/test1.cpp
+-----------------------------
+Function Table (size = 2):
+-----------------------------
+funcName              = main
+type                  = int
+isOmp2dartsFunction   = 0
+id                    = 2
+Num of Parallel Reg   = 0
+-----------------------------
+funcName              = sum
+type                  = int
+isOmp2dartsFunction   = 0
+id                    = 1
+Num of Parallel Reg   = 0
+-----------------------------
+Compiling
+fileName : /home/chivier/Projects/chranslate/build/bin/../../tests/test1.cpp
+AST traverse ended, generating fine-grain application...
