@@ -4,7 +4,7 @@ debug
 .ccls-cache
 .vscode
 .idea
-
+.cache
 
 llvm/bolt
 llvm/clang
